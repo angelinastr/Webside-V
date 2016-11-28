@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Webside V - Masken </title>
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+    </style>
+  </head>
+  <body>
+
+    <svg class="image" viewBox="0 0 800 300">
+      <rect width="80%" height="90%" class="hintergrund" />
+
+      <defs>
+        <clipPath id="mask">
+          <text x="50%" y="200" class="text"> ART.EX </text>
+        </clipPath>
+      </defs>
+
+      <image xlink:href="images/bild.jpg" x="-90" y="-100" width="1000" height="667"
+      class="bild" clip-path="url(#mask)"/>
+    </svg>
+
+
+  </body>
+</html>
